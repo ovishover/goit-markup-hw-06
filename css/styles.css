@@ -166,6 +166,7 @@ ul .current {
   max-width: 696px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
 }
 .button {
   font-family: inherit;
@@ -211,13 +212,24 @@ ul .current {
   flex-wrap: wrap;
   margin-top: 0px;
 }
-.hero-button {
+.main-button {
   background-color: var(--accent-color);
   padding: 10px 32px;
-  margin-top: 30px;
+  min-width: 200px;
   border-radius: 4px;
   border: none;
 }
+.subscribe-button {
+  background-color: var(--accent-color);
+  padding: 10px 32px;
+  min-width: 200px;
+  border-radius: 4px;
+  border: none;
+  margin-left: 12px;
+  display: inline-flex;
+  align-items: center;
+}
+
 .button-link {
   font-family: inherit;
   font-style: normal;
@@ -497,14 +509,16 @@ ul .current {
 }
 .join {
   margin-left: 70px;
+  margin-right: 93px;
 }
 .join-list {
   display: flex;
 }
-.join-title {
+.join-title,
+.subscrible-title {
   font-family: Roboto, sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: (16 / 14);
   letter-spacing: 0.03em;
@@ -553,6 +567,28 @@ ul .current {
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+}
+.subscribe-form {
+  display: flex;
+  align-items: center;
+}
+
+.subscribe-icon {
+  margin-left: 10px;
+}
+.subscribe-input {
+  min-width: 358px;
+  height: 50px;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  font-family: inherit;
+  font-style: normal;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
 }
 
 .modal {
