@@ -459,16 +459,26 @@
           </ul>
         </div>
         <div class="subscribe">
-          <p class="subscrible-title">подпишитесь на рассылку</p>
-          <form class="subscribe-form">
-            <input type="text" class="subscribe-input" placeholder="E-mail" />
-            <button type="button" class="subscribe-button button-link">
-              Подписаться
-              <svg class="subscribe-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
-          </form>
+          <label for="users-mail"
+            ><p class="subscrible-title">подпишитесь на рассылку</p>
+            <form class="subscribe-form">
+              <input
+                type="email"
+                name="users-mail"
+                class="subscribe-input"
+                placeholder="E-mail"
+                required
+                id="users-mail"
+              />
+
+              <button type="submit" class="subscribe-button button-link">
+                Подписаться
+                <svg class="subscribe-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </form>
+          </label>
         </div>
       </div>
     </footer>
@@ -479,6 +489,54 @@
             <use href="./images/icons.svg#close-icon"></use>
           </svg>
         </button>
+        <p>Оставьте свои данные, мы вам перезвоним</p>
+        <form>
+          <div class="form-field">
+            <label for="user-name">Имя</label>
+            <input
+              type="text"
+              name="user-name"
+              class="callback-input"
+              id="user-name"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <label for="user-tel">Телефон</label>
+            <input
+              type="tel"
+              name="user-tel"
+              class="callback-input"
+              id="user-tel"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <label for="user-mail">Почта</label>
+            <input
+              type="email"
+              name="user-mail"
+              class="callback-input"
+              id="user-mail"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <label for="user-coment">Комментарий</label>
+            <input
+              type="email"
+              name="user-coment"
+              class="callback-input"
+              id="user-coment"
+              placeholder="Введите текст"
+            />
+          </div>
+          <div form-field>
+            <button type="submit" class="callback-button button-link">
+              Отправить
+            </button>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

@@ -340,16 +340,26 @@
           </ul>
         </div>
         <div class="subscribe">
-          <p class="subscrible-title">подпишитесь на рассылку</p>
-          <form class="subscribe-form">
-            <input type="text" class="subscribe-input" placeholder="E-mail" />
-            <button type="button" class="subscribe-button button-link">
-              Подписаться
-              <svg class="subscribe-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
-          </form>
+          <label for="user-mail"
+            ><p class="subscrible-title">подпишитесь на рассылку</p>
+            <form class="subscribe-form">
+              <input
+                type="email"
+                name="user-mail"
+                class="subscribe-input"
+                placeholder="E-mail"
+                required
+                id="user-mail"
+              />
+
+              <button type="submit" class="subscribe-button button-link">
+                Подписаться
+                <svg class="subscribe-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </form>
+          </label>
         </div>
       </div>
     </footer>
