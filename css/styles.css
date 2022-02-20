@@ -641,6 +641,7 @@ ul .current {
   box-sizing: border-box;
   border-radius: 4px;
   padding: 12px 16px;
+  resize: none;
 }
 .callback-input::placeholder {
   font-family: Roboto;
