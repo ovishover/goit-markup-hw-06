@@ -535,16 +535,21 @@
             <textarea
               name="user-text"
               id="user-text"
-              rows="5"
               class="callback-coment"
               placeholder="Введите текст"
             ></textarea>
           </div>
-          <div class="form-field">
-            <span class="sign-check"
-              >Соглашаюсь с рассылкой и принимаю
-              <a href class="sign-link">Условия договора</a>
-            </span>
+          <div class="sign-field">
+            <input
+              type="checkbox"
+              name="sign-terms"
+              id="sign-terms"
+              class="modal-check visually-hidden"
+            />
+            <label for="sign-terms" class="sign-check">
+              Соглашаюсь с рассылкой и принимаю
+              <a href class="sign-link"> Условия договора</a>
+            </label>
             <button type="submit" class="callback-button button-link">
               Отправить
             </button>
