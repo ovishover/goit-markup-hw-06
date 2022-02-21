@@ -227,6 +227,7 @@ ul .current {
   border: none;
   margin-left: 12px;
   align-items: center;
+  display: inline-flex;
 }
 
 .callback-button {
@@ -575,10 +576,10 @@ ul .current {
   opacity: 1;
 }
 
-/* .backdrop.is-hidden {
+.backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-} */
+}
 .subscribe-form {
   display: flex;
   align-items: center;
