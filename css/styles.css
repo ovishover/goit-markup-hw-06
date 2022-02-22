@@ -637,6 +637,7 @@ ul .current {
   box-sizing: border-box;
   border-radius: 4px;
   padding-left: 30px;
+  transition: border-color var(--transition-time) var(--attenuation-function);
 }
 .callback-coment {
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -646,6 +647,7 @@ ul .current {
   resize: none;
   height: 120px;
   width: 100%;
+  transition: border-color var(--transition-time) var(--attenuation-function);
 }
 
 .callback-coment::placeholder {
@@ -720,6 +722,7 @@ ul .current {
   position: absolute;
   top: 50%;
   margin-left: 12px;
+  transition: fill var(--transition-time) var(--attenuation-function);
 }
 
 .form-field + .form-field {
@@ -728,7 +731,7 @@ ul .current {
 
 .form-field:focus-within .callback-icon,
 .form-field:hover .callback-icon {
-  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 .form-field:focus-within .callback-input,
 .form-field:hover .callback-input {
