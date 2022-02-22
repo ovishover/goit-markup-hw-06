@@ -725,6 +725,21 @@ ul .current {
 .form-field + .form-field {
   margin-top: 10px;
 }
+
+.form-field:focus-within .callback-icon,
+.form-field:hover .callback-icon {
+  color: var(--accent-color);
+}
+.form-field:focus-within .callback-input,
+.form-field:hover .callback-input {
+  border-color: var(--accent-color);
+  outline: none;
+}
+.form-field:focus-within .callback-coment,
+.form-field:hover .callback-coment {
+  border-color: var(--accent-color);
+  outline: none;
+}
 .modal {
   position: absolute;
   top: 50%;
